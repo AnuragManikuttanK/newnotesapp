@@ -372,3 +372,128 @@ ul li i:last-of-type{
 .note-tags{
     margin-top: 12px;
 }
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .todoapp-container {
+        width: 94%;
+        margin: 15px auto;
+    }
+
+   
+    .input-section {
+        width: 100%;
+        max-width: 100%;
+        padding: 18px 12px;
+    }
+
+    .input-section h1 {
+        font-size: 22px;
+    }
+
+    .input-section input,
+    .input-section textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    
+    .search {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .search-input {
+        flex: 1 1 100%;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .search select,
+    .search .archive,
+    .view-button button {
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+
+    .view-button {
+        flex: 1;
+    }
+
+    .view-button button {
+        width: 100%;
+    }
+
+    
+    .notes-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .notes-grid li,
+    .notes-list li {
+        width: 100%;
+        min-height: 150px;
+        padding: 14px;
+        box-sizing: border-box;
+    }
+
+    
+    .note-content h3 {
+        font-size: 17px;
+        overflow-wrap: anywhere;
+    }
+
+    .note-content p {
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+
+    
+    .note-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 6px;
+    }
+
+    .note-actions button {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .note-actions i {
+        width: 28px;
+        height: 28px;
+        font-size: 15px;
+    }
+
+   
+    .note-dates p {
+        font-size: 10px;
+    }
+
+    .note-tag {
+        font-size: 11px;
+    }
+
+   
+    .color-picker {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .color-picker button {
+        width: 28px;
+        height: 28px;
+    }
+
+    
+    .empty-message {
+        font-size: 14px;
+    }
+}
