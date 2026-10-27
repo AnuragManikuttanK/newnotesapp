@@ -430,17 +430,40 @@ ul li i:last-of-type{
 
     
     .notes-grid {
-        grid-template-columns: 1fr;
-        gap: 12px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        width: 100%;
     }
 
-    .notes-grid li,
-    .notes-list li {
+    .notes-grid li {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        min-height: 150px;
-        padding: 14px;
+        min-width: 0;
+        min-height: 180px;
         box-sizing: border-box;
     }
+
+   
+    .notes-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .notes-list li {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 0;
+        min-height: 150px;
+        box-sizing: border-box;
+    }
+
+
+
 
     
     .note-content h3 {
